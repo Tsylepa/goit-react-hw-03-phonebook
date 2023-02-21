@@ -1,4 +1,23 @@
-@import-normalize; /* bring in normalize.css styles */
+:root {
+  --font-color: #212121;
+  --button: #d5d5d5;
+  --button-delete: #972929;
+  --button-add: #408940;
+  --error: #ff0000;
+  --contrast-color: #e8e8e8;
+  --table: #f0f0f0;
+  --shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  --transition-function: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
 
 body {
   margin: 0;
