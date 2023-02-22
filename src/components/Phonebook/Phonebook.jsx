@@ -13,10 +13,7 @@ class Phonebook extends Component {
   };
 
   componentDidUpdate(_, prevState) {
-    console.log('now  ', this.state.contacts);
-    console.log('prev  ', prevState.contacts);
     if (this.state.contacts !== prevState.contacts) {
-      console.log('did update');
       localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
     }
   }
